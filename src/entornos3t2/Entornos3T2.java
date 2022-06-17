@@ -11,6 +11,11 @@ package entornos3t2;
  */
 public class Entornos3T2 {
 
+    private int numRamas;
+    private String ramaPrincipal;
+    private String ramaEvolucionada;
+    
+    
     /**
      * @param args the command line arguments
      */
