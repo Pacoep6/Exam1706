@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"entornos3t2","l":"Entornos3T2"},{"p":"entornos3t2","l":"Pakemon"}];updateSearchResults();
