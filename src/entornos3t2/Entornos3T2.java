@@ -14,8 +14,7 @@ public class Entornos3T2 {
     private int numRamas;
     private String ramaPrincipal;
     private String ramaEvolucionada;
-    
-    
+
     /**
      * @param args the command line arguments
      */
@@ -25,7 +24,6 @@ public class Entornos3T2 {
         juego1.cogerPakeball();
         juego1.cogerPakeball();
 
-        
         //intento capturar pakemons
         String[] listadoPakemon = {"Staryu", "Mew", "Pikachu", "Charmander", "Lapras", "Gyarados"};
         capturarLista(listadoPakemon, juego1);
@@ -35,11 +33,15 @@ public class Entornos3T2 {
     }
 
     public static void capturarLista(String[] pakemon, Pakemon juego1) {
-        for (int i = 0; i < pakemon.length; i++) {
+        //Para que no tenga que calcular la longitud del array en cada iteracción del bucle.
+        int max = pakemon.length;
+        for (int i = 0; i < max; i++) {
             if (juego1.getPakeballs() > 0) {
                 juego1.capturarPakemon(pakemon[i]);
             } else {
                 System.out.println("No tienes Pakeballs");
+                // Para que no siga haciendo iteracciones innecesarias.
+                break;
             }
         }
     }
