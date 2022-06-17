@@ -33,13 +33,21 @@ public class Entornos3T2 {
         //intento ganar
         System.out.println(juego1.decirClaveFinal(122344324));
     }
-
+/**
+ * 
+ * @see Pakemon
+ * @param pakemon
+ * @param juego1 
+ */
     public static void capturarLista(String[] pakemon, Pakemon juego1) {
-        for (int i = 0; i < pakemon.length; i++) {
+        //Cambiado pakemon.length a 6 para optimizarlo
+        for (int i = 0; i < 6; i++) {
             if (juego1.getPakeballs() > 0) {
                 juego1.capturarPakemon(pakemon[i]);
             } else {
-                System.out.println("No tienes Pakeballs");
+                //cambio el sout para que sea mas optimo y haga un sout de una variable
+                String out=("No tienes Pakeballs");
+                System.out.println(out);
             }
         }
     }
