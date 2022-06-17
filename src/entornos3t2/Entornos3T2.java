@@ -8,6 +8,7 @@ package entornos3t2;
  * Clase principal, sólo sirve para crear objetos y probar
  *
  * @author PACO
+ * @version modificaciones capturarLista
  */
 public class Entornos3T2 {
 
@@ -34,12 +35,19 @@ public class Entornos3T2 {
         System.out.println(juego1.decirClaveFinal(122344324));
     }
 
+    /**
+     * 
+     * @param pakemon Array de string con los pokemons
+     * @param juego1 
+     */
     public static void capturarLista(String[] pakemon, Pakemon juego1) {
-        for (int i = 0; i < pakemon.length; i++) {
+        int tamaño = pakemon.length;
+        for (int i = 0; i < tamaño; i++) {
             if (juego1.getPakeballs() > 0) {
                 juego1.capturarPakemon(pakemon[i]);
             } else {
                 System.out.println("No tienes Pakeballs");
+                break;
             }
         }
     }
