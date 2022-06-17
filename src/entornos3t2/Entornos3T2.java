@@ -15,6 +15,9 @@ public class Entornos3T2 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        /**
+         * Se genera un objeto de la clase pakemon
+         */
         Pakemon juego1 = new Pakemon("");
         //primero cojo alguna pakeball
         juego1.cogerPakeball();
@@ -28,9 +31,16 @@ public class Entornos3T2 {
         //intento ganar
         System.out.println(juego1.decirClaveFinal(122344324));
     }
-
+    
+    /**
+     * 
+     * @param pakemon nombre del pakemon
+     * @param juego1 nombre del objeto de la clase Pakemon
+     */
     public static void capturarLista(String[] pakemon, Pakemon juego1) {
-        for (int i = 0; i < pakemon.length; i++) {
+        int length;
+        length = pakemon.length;
+        for (int i = 0; i < length; i++) {
             if (juego1.getPakeballs() > 0) {
                 juego1.capturarPakemon(pakemon[i]);
             } else {
