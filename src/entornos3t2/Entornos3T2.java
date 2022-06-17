@@ -8,6 +8,7 @@ package entornos3t2;
  * Clase principal, sólo sirve para crear objetos y probar
  *
  * @author PACO
+ * @version 12.5
  */
 public class Entornos3T2 {
 
