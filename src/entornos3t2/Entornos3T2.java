@@ -8,6 +8,9 @@ package entornos3t2;
  * Clase principal, sólo sirve para crear objetos y probar
  *
  * @author PACO
+ * @version Esmeralda
+ * 
+ * Clase main que ejecuta nuestro Pokemon esmeralda de clase.
  */
 public class Entornos3T2 {
 
@@ -35,11 +38,14 @@ public class Entornos3T2 {
     }
 
     public static void capturarLista(String[] pakemon, Pakemon juego1) {
-        for (int i = 0; i < pakemon.length; i++) {
-            if (juego1.getPakeballs() > 0) {
+        int longitud = pakemon.length;
+        for (int i = 0; i < longitud; i++) {
+            int nPakeballs = juego1.getPakeballs();
+            if (nPakeballs > 0) {
                 juego1.capturarPakemon(pakemon[i]);
             } else {
                 System.out.println("No tienes Pakeballs");
+                break;
             }
         }
     }
