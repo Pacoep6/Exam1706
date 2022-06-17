@@ -5,9 +5,11 @@
 package entornos3t2;
 
 /**
- *
+ * @author Manuel
  * @author PACO
  */
+
+
 public class Pakemon {
 
     private String nombreJugador; //nombre del jugador, se pide al crear el juego
