@@ -78,35 +78,67 @@ public class Pakemon {
             return "¡Chicos, hay que estudiar más!";
         }
     }
-
+    
+    /**
+     * Devuelve el nombre del juegador
+     * @return 
+     */
     public String getNombreJugador() {
         return nombreJugador;
     }
 
+    /**
+     * Pide el nombre del jugador
+     * @param nombreJugador 
+     */
     public void setNombreJugador(String nombreJugador) {
         this.nombreJugador = nombreJugador;
     }
-
+    
+    /**
+     * Devuelve si el juego ha terminado o no
+     * @return 
+     */
     public boolean isJuegoPasado() {
         return juegoPasado;
     }
-
+    
+    /**
+     * Actualiza el estado en el que se encuentra el juego
+     * @param juegoPasado 
+     */
     public void setJuegoPasado(boolean juegoPasado) {
         this.juegoPasado = juegoPasado;
     }
-
+    
+    /** 
+     * Devuelve el número de pakemons capturados
+     * @return 
+     */
     public int getPakemonCapturados() {
         return pakemonCapturados;
     }
-
+    
+    /**
+     * Actualiza la cantidad de pakemons capturados
+     * @param pakemonCapturados 
+     */
     public void setPakemonCapturados(int pakemonCapturados) {
         this.pakemonCapturados = pakemonCapturados;
     }
-
+    
+    /**
+     * Devuelve el número de pakeballs
+     * @return 
+     */
     public int getPakeballs() {
         return pakeballs;
     }
-
+    
+    /**
+     * Actualiza el número de pakeballs
+     * @param pakeballs 
+     */
     public void setPakeballs(int pakeballs) {
         this.pakeballs = pakeballs;
     }
