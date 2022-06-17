@@ -10,6 +10,9 @@ package entornos3t2;
  */
 public class Pakemon {
 
+    // David Martín
+    
+    
     private String nombreJugador; //nombre del jugador, se pide al crear el juego
     private boolean juegoPasado; //indica si se ha pasado el juego o aún no
     private int pakemonCapturados; //indica los pakemon que tiene el jugador en su poder
