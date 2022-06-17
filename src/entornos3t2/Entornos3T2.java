@@ -6,6 +6,7 @@ package entornos3t2;
 
 /**
  * Clase principal, sólo sirve para crear objetos y probar
+ *
  * @author PACO
  */
 public class Entornos3T2 {
@@ -14,7 +15,24 @@ public class Entornos3T2 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Pakemon juego1 = new Pakemon("");
+        //primero cojo alguna pakeball
+        juego1.cogerPakeball();
+        juego1.cogerPakeball();
+
+        
+        //intento capturar pakemons
+        String[] pakemon = {"Staryu", "Mew", "Pikachu", "Charmander", "Lapras", "Gyarados"};
+        for (int i = 0; i < pakemon.length; i++) {
+            if (juego1.getPakeballs() > 0) {
+                juego1.capturarPakemon(pakemon[i]);
+            } else {
+                System.out.println("No tienes Pakeballs");
+            }
+        }
+
+        //intento ganar
+        juego1.decirClaveFinal(122344324);
     }
-    
+
 }

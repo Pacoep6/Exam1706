@@ -36,6 +36,7 @@ public class Pakemon {
             return false;
         } else {
             System.out.println("¡Capturado!");
+            this.pakeballs--;
             return true;
 
         }
