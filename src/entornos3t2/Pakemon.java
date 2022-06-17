@@ -10,11 +10,12 @@ package entornos3t2;
  */
 public class Pakemon {
 
-    private String nombreJugador;
-    private boolean juegoPasado;
-    private int pakemonCapturados;
-    private int pakeballs;
+    private String nombreJugador; //nombre del jugador, se pide al crear el juego
+    private boolean juegoPasado; //indica si se ha pasado el juego o aún no
+    private int pakemonCapturados; //indica los pakemon que tiene el jugador en su poder
+    private int pakeballs; //disponibles para capturar pakemons
 
+    
     public Pakemon(String nombreIn) {
         if (nombreIn.equals("")) {
             this.nombreJugador = "Vago/a";
@@ -25,6 +26,7 @@ public class Pakemon {
         this.pakemonCapturados = 0;
     }
 
+    
     public boolean capturarPakemon(String nombrePakemon) {
         if (this.pakeballs == 0) {
             System.out.println("No se puede capturar");
