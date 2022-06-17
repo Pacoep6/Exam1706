@@ -26,7 +26,7 @@ public class Entornos3T2 {
         capturarLista(listadoPakemon, juego1);
 
         //intento ganar
-        juego1.decirClaveFinal(122344324);
+        System.out.println(juego1.decirClaveFinal(122344324));
     }
 
     public static void capturarLista(String[] pakemon, Pakemon juego1) {
